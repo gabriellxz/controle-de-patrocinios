@@ -3,7 +3,6 @@ import { MdOutlineAttachMoney } from "react-icons/md";
 import { BsGraphUp } from "react-icons/bs";
 import { CiCircleCheck } from "react-icons/ci";
 import { CiClock1 } from "react-icons/ci";
-import { Card, CardDescription, CardTitle } from "../ui/card";
 
 interface StatsCardProps {
     sponsors: Sponsorship[]
@@ -51,7 +50,7 @@ export default function CardStats({ sponsors }: StatsCardProps) {
         <>
             {
                 stats.map((s, index) => (
-                    <div className="flex justify-between items-center bg-white p-4 rounded-lg shadow-md mb-4" key={index}>
+                    <div className="flex justify-between items-center bg-white p-4 rounded-lg shadow-md" key={index}>
                         <div>
                             <p className="text-zinc-500">{s.label}</p>
                             <p className="text-2xl font-bold">{s.value}</p>

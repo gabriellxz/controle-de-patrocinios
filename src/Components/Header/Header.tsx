@@ -19,7 +19,7 @@ export default function Header({ openModal, setOpenModal }: HeaderProps) {
     const location = useLocation()
 
     return (
-        <header className="flex justify-between items-center bg-white p-5 fixed w-full">
+        <header className="flex justify-between items-center bg-white p-5 fixed w-full z-10">
             <div className=" flex items-center gap-3">
                 <FaRegHandshake className="text-4xl bg-blue-600 text-white p-1 rounded" />
                 <div>
